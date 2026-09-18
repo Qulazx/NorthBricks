@@ -18,6 +18,13 @@ Then visit [http://localhost:4173](http://localhost:4173).
 - `product.html` — bank transfers product
 - `software.html` — other apps and software
 - `about.html` — company
-- `contact.html` — contact form (client-side only)
+- `contact.html` — contact form (client-side only; submit opens the visitor's email app with a prefilled `mailto:`)
+
+## Assets
+
+- `favicon.svg`, `apple-touch-icon.png` — site icons
+- `og-image.png` — 1200x630 share image used by the Open Graph / Twitter tags in every page `<head>`
+
+Canonical and `og:url` tags assume the production domain `https://northbricks.se/`. Update them if the site is served elsewhere.
 
 There is no backend and no live payments.
