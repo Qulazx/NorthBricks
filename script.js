@@ -95,5 +95,9 @@
 
     form.hidden = true;
     if (successEl) successEl.classList.add("is-visible");
+
+    // Hand the prefilled message to the visitor's email app. The success
+    // panel keeps the same link as a fallback if nothing opens.
+    window.location.href = mailto;
   });
 })();
