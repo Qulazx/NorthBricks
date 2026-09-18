@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — NorthBricks AB</title>
+  <meta name="description" content="Contact NorthBricks AB about digital bank transfers and company software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 1 28 23" aria-hidden="true">
+          <polygon class="logo-cell" points="10.80,1.35 15.87,4.28 15.87,10.12 10.80,13.05 5.73,10.12 5.73,4.28"/>
+          <polygon class="logo-cell logo-cell-accent" points="22.23,1.35 27.30,4.28 27.30,10.12 22.23,13.05 17.17,10.12 17.17,4.28"/>
+          <polygon class="logo-cell" points="5.08,11.25 10.15,14.17 10.15,20.02 5.08,22.95 0.02,20.02 0.02,14.17"/>
+          <polygon class="logo-cell" points="16.52,11.25 21.58,14.17 21.58,20.02 16.52,22.95 11.45,20.02 11.45,14.17"/>
+        </svg>
+        NorthBricks
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="product.html">Bank Transfers</a></li>
+          <li><a href="software.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="nav-cta" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Tell us how your company pays today.</h1>
+        <p>Share a short note and we will get back to you. Nothing is sent to a server from this page — you will see a confirmation, and you can also email us directly.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap contact-grid reveal">
+        <div>
+          <form id="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" autocomplete="organization" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              Message
+              <textarea name="message" required></textarea>
+            </label>
+            <p class="error" id="form-error" role="alert"></p>
+            <button class="button button-primary" type="submit">Send message</button>
+          </form>
+          <div class="form-success" id="form-success">
+            <h2>Thanks — we have your note.</h2>
+            <p>This demo form does not send to a server. If you want the message in your inbox, use the email link below.</p>
+            <p><a id="mailto-fallback" href="mailto:hello@northbricks.se">Email hello@northbricks.se</a></p>
+          </div>
+        </div>
+        <aside class="company-box">
+          <h2>NorthBricks AB</h2>
+          <p>Org. no. 559000-0000</p>
+          <p>Stockholm, Sweden</p>
+          <p><a href="mailto:hello@northbricks.se">hello@northbricks.se</a></p>
+          <p class="muted">Placeholder company details until the real registration number and address are added.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>NorthBricks AB</strong>
+        <p>Org. no. 559000-0000 · Stockholm, Sweden</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="product.html">Bank Transfers</a>
+        <a href="software.html">Apps</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
